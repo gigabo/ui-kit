@@ -1,0 +1,27 @@
+{
+  "name": "ui-kit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassify": "node-sass styles/index.scss www/styles/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/careylin/ui-kit.git"
+  },
+  "keywords": [
+    "react-server",
+    "ui-kit"
+  ],
+  "author": "Carey Spies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/careylin/ui-kit/issues"
+  },
+  "homepage": "https://github.com/careylin/ui-kit#readme",
+  "devDependencies": {
+    "node-sass": "^3.6.0"
+  }
+}
