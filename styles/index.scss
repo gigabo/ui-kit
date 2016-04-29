@@ -1,3 +1,44 @@
-h1 {
-  color: red;
+@import "reset";
+
+// Text colors
+$headingColor: #2E2E2E;
+$vanta:#333333;
+$darkColor: #494949;
+$linkColor: #0E58F5;
+$mediumGrey: #d6d6d6;
+$white: #FFFFFF;
+
+//typography
+$font-stack:normal 14px/1.5 "Helvetica Neue", sans-serif;
+
+//radius lol
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//real styles start here
+body{
+  font:$font-stack;
+  color:$vanta;
+}
+
+button{
+  font:$font-stack;
+  font-weight:500;
+  @include border-radius(3px);
+  /*border:1px solid $mediumGrey;*/
+  border:none;
+  padding: 6px 18px;
+  background-color: $linkColor;
+  color:$white;
+  transition:background-color 200ms linear;
+  margin-right:15px;//for testing purposes only
+
+  &:hover{
+  background-color:lighten($linkColor, 5%);
+  box-shadow:0px 1px 2px 0px rgba( $mediumGrey, .9 );
+  }
 }
