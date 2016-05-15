@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sassify": "node-sass styles/index.scss www/styles/index.css",
-    "start": "react-server-cli --routes=www/routes.js"
+    "componentify": "mkdir -p www/components && cp components/* www/components",
+    "start": "react-server-cli --routes=www/routes.js",
+    "clean": "rm -r __clientTemp www/components www/styles",
+    "build": "npm run componentify && npm run sassify"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
     "ui-kit"
   ],
   "author": "Carey Spies",
+  "contributors": [ "Doug Wade <doug@dougwade.io>" ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/careylin/ui-kit/issues"
@@ -33,5 +37,8 @@
     "react-server": "^0.2.6",
     "react-server-cli": "^0.2.6",
     "superagent": "1.2.0"
+  },
+  "peerDependencies": {
+    "react-server": "^0.2.6"
   }
 }

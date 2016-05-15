@@ -1,4 +1,5 @@
-import React from "react"
+import React from 'react'
+import Button from './components/Button.js'
 import './styles/index.css'
 
 export default class SimplePage {
@@ -9,10 +10,9 @@ export default class SimplePage {
 			<h2>Heading 2</h2>
 			<h3>Heading 3</h3>
 			<hr/>
-			<button>Click Me</button>
-			<button>Love Me</button>
-			<button>Press my Buttons</button>
-
-			</div>		);
+			<Button>Click Me</Button>
+			<Button href="/transition">Love Me</Button>
+			<Button href="/transition" clientTransition={true} reuseDom={true}>Press my Buttons</Button>
+		</div>);
 	}
 }

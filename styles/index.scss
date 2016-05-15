@@ -25,7 +25,7 @@ body{
   color:$vanta;
 }
 
-button{
+.button{
   font:$font-stack;
   font-weight:500;
   @include border-radius(3px);
