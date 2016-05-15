@@ -1,9 +1,14 @@
 module.exports = {
 	routes: {
-		HelloWorld: {
+		Index: {
 			path: ['/'],
 			method: 'get',
-			page: "./index",
+			page: './index',
+		},
+		Transition: {
+			path: ['/transition'],
+			method: 'get',
+			page: './transition',
 		},
 	},
 };
