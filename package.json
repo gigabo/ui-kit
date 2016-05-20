@@ -39,6 +39,6 @@
     "superagent": "1.2.0"
   },
   "peerDependencies": {
-    "react-server": "^0.2.6"
+    "react-server": "^0.2.10"
   }
 }
